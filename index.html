@@ -1,84 +1,168 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infra & DevOps Hub</title>
-    <link rel="stylesheet" href="style.css">
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1193d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              display: ["Space Grotesk"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
 </head>
-<body>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-gray-900 dark:text-white">
+<svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-xl font-bold">DevConnect</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-primary" href="#">Articles</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Discussions</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Resources</a>
+</nav>
+</div>
+<div class="flex flex-1 items-center justify-end gap-4">
+<label class="relative hidden sm:block min-w-40 max-w-64">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+<svg class="h-5 w-5 text-gray-400 dark:text-gray-500" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<input class="form-input w-full rounded-lg border-primary/30 bg-background-light dark:bg-background-dark py-2 pl-10 pr-4 text-sm focus:border-primary focus:ring-primary" placeholder="Search" value=""/>
+</label>
+<button class="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition-opacity hover:opacity-90">
+<span class="truncate">Contribute</span>
+</button>
+<div class="h-10 w-10 flex-shrink-0">
+<img alt="User avatar" class="h-full w-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuLsN-PGKT7lDv4pEseN97sf8OArDpde4X_r_mwnjNCSC8O0JEt7Ag7Yz8yd7LU14kk-l66cx0AArcC8USuEhK7Gggd_dlg2Vhq0d9wuJMDNImNhFdFlvdTtPldWRh-78sIBYcz1qS1o6WWzwNkpmsQ5cznGUwrVIdjeCEDFAoG3t3pr_Kwka3N8WMFJyG0wAuykC9q77syrVoz4SbHv9XR1sY3BNP_1OzUC6fWtkmP3pSIRf1dlY140aneb-9NWkRhHa4bzZ0Lwg"/>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center px-4 py-8 sm:px-10 md:px-20 lg:px-40">
+<div class="layout-content-container w-full max-w-5xl flex-1">
+<div class="@container">
+<div class="@[480px]:p-4">
+<div class="relative flex min-h-[480px] flex-col items-start justify-end gap-6 overflow-hidden rounded-xl bg-cover bg-center bg-no-repeat px-6 py-10 @[480px]:gap-8 @[480px]:px-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4SnmMyt2a_Crxa1j6KDdxYvzNwbEQQuUMV5jyQ1E9SjsYpDFPYvEWqy6hxPDCV0GjY4D2wG0ehXNb8zth7p0tXnk0WobpiEAa5ePiVBXGvTQT_jkeo5W4ENeVGA9_mSltz8eu_qrD8R8ZU7ACm_tFGmYDScQHcc0a4c_TL_QBF5pBxgNAho7ZGYzLeqB-yMQzpke7lPDVxfFoiIUr6zj2wRO0qIAZ_DcilfpAMxL3z0wAnkqyE-VgutYA-KkZLsOnXKispqDGfe4");'>
+<div class="absolute inset-0 bg-black/40"></div>
+<div class="relative z-10 flex flex-col gap-4 text-left">
+<h1 class="text-4xl font-bold leading-tight text-white @[480px]:text-5xl">Connect, Share, and Grow</h1>
+<p class="max-w-2xl text-base font-normal text-white/90 @[480px]:text-lg">Join a vibrant community of developers and infrastructure professionals. Share your insights, collaborate on projects, and stay updated with the latest trends.</p>
+</div>
+<button class="relative z-10 flex cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 py-3 text-base font-bold text-white transition-opacity hover:opacity-90 @[480px]:h-12">
+<span class="truncate">Explore Articles</span>
+</button>
+</div>
+</div>
+</div>
+<section class="py-12">
+<h2 class="px-4 pb-6 text-2xl font-bold text-gray-900 dark:text-white">Latest Articles</h2>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+<article class="flex flex-col overflow-hidden rounded-lg bg-background-light dark:bg-background-dark shadow-md transition-shadow hover:shadow-xl">
+<div class="h-48 w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIcaoWG1Ose5m-33K1DzEX6GdxZLYu-pV4p0DTLj7CTrJgH_OH5z_VGB2hzruEtjNNTYDE0Nw-SqhM9ToBPaKmhLyy2guNpadIYg-64PHFeiaBnFdaz-KMhEooI-jGA1E06dCOnO2Jp4LrmhscFr1ITAIrOcyMTs_9TM6nIFNX1KR8dk0glsOrKxFX0OknwE4lAj7CvfgWVzm_5clzoe5pt6YTb2hWjzy3ntOeJSiEwmb4142FuTHzDc-nbocy08nvUexevcs29mQ");'></div>
+<div class="flex flex-1 flex-col justify-between p-6">
+<div class="flex-1">
+<p class="text-sm font-medium text-primary">Featured</p>
+<h3 class="mt-2 text-lg font-bold text-gray-900 dark:text-white">Building Scalable Microservices with Go</h3>
+<p class="mt-3 text-sm text-gray-600 dark:text-gray-400">Learn how to design and implement scalable microservices using the Go programming language, covering best practices and common pitfalls.</p>
+</div>
+<div class="mt-6">
+<a class="text-sm font-semibold text-primary hover:underline" href="#">Read More</a>
+</div>
+</div>
+</article>
+<article class="flex flex-col overflow-hidden rounded-lg bg-background-light dark:bg-background-dark shadow-md transition-shadow hover:shadow-xl">
+<div class="h-48 w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDywlPEpD9RwdUK4rkL3Tva2iGez06Km7yCSOF4gjWM2wQ3TSyMQORlwzb9RBnkc0YdO-2iU94jdIG8oC621C0T5CjNFfURSUSrUG1XWag2_keSwAyaYAeu7pWXJOUw7c3ehqX7UQSz3Yd4jr0brS2HJBlEAkX-trBudAlqrwy52LXeOn9Uuu4oEkc4ikGIJVViPxBRngAAL5oKKEiTJqFVFe0wtsSzbo3wr3mV1T3SygCYRnHrMMxS402Q6_MiGbLoUMDeQCb5GUw");'></div>
+<div class="flex flex-1 flex-col justify-between p-6">
+<div class="flex-1">
+<p class="text-sm font-medium text-primary">Trending</p>
+<h3 class="mt-2 text-lg font-bold text-gray-900 dark:text-white">Securing Your Cloud Infrastructure</h3>
+<p class="mt-3 text-sm text-gray-600 dark:text-gray-400">A comprehensive guide to securing your cloud infrastructure, including identity and access management, network security, and data protection.</p>
+</div>
+<div class="mt-6">
+<a class="text-sm font-semibold text-primary hover:underline" href="#">Read More</a>
+</div>
+</div>
+</article>
+<article class="flex flex-col overflow-hidden rounded-lg bg-background-light dark:bg-background-dark shadow-md transition-shadow hover:shadow-xl">
+<div class="h-48 w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqtWfbxpOJPc0MMaVxELhAqH_BaI_vFOcspfXYbeKEdilIvH7U3xr-90-yiuNvjih_oeSemd_qzEcDwz6sLRHqpxRU3iAYqx-vRHwyAGzHEfZ_WHPIzeylrHHRlXCu1OxuJE3xJrErH9dPpJOn03pkM3whbixyfWH0NGjk1upc40-PpRIWIuGsUJ3w9F1Qpd1WdVlqUSB7g__-TN61kTV-mwnNVc3oNkTnXDiDsTeL_lb7QxOw5fDslLOq0YhdllNjGq260ESuqSs");'></div>
+<div class="flex flex-1 flex-col justify-between p-6">
+<div class="flex-1">
+<p class="text-sm font-medium text-primary">New</p>
+<h3 class="mt-2 text-lg font-bold text-gray-900 dark:text-white">Optimizing Database Performance</h3>
+<p class="mt-3 text-sm text-gray-600 dark:text-gray-400">Techniques for optimizing database performance, including query optimization, indexing strategies, and database tuning.</p>
+</div>
+<div class="mt-6">
+<a class="text-sm font-semibold text-primary hover:underline" href="#">Read More</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="py-12">
+<h2 class="px-4 pb-6 text-2xl font-bold text-gray-900 dark:text-white">Discussions</h2>
+<div class="space-y-4">
+<a class="flex items-center gap-4 rounded-lg bg-background-light dark:bg-background-dark p-4 shadow-sm transition-shadow hover:shadow-md" href="#">
+<div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"></path>
+</svg>
+</div>
+<div>
+<p class="font-medium text-gray-900 dark:text-white">Best Practices for CI/CD Pipelines</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">5 comments</p>
+</div>
+</a>
+<a class="flex items-center gap-4 rounded-lg bg-background-light dark:bg-background-dark p-4 shadow-sm transition-shadow hover:shadow-md" href="#">
+<div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"></path>
+</svg>
+</div>
+<div>
+<p class="font-medium text-gray-900 dark:text-white">Choosing the Right Cloud Provider</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">12 comments</p>
+</div>
+</a>
+<a class="flex items-center gap-4 rounded-lg bg-background-light dark:bg-background-dark p-4 shadow-sm transition-shadow hover:shadow-md" href="#">
+<div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"></path>
+</svg>
+</div>
+<div>
+<p class="font-medium text-gray-900 dark:text-white">DevOps Tools for Small Teams</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">8 comments</p>
+</div>
+</a>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
 
-    <header>
-        <h1>Infra & DevOps Hub</h1>
-        <nav>
-            <ul>
-                <li><a href="#bienvenue">Bienvenue</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contributions">Contributions</a></li>
-                <li><a href="#apropos">À propos</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Section Bienvenue -->
-        <section id="bienvenue">
-            <h2>Bienvenue</h2>
-            <p>Un espace communautaire simple pour les professionnels de l'infrastructure (SysOps) et du développement (DevOps).</p>
-            <p>Ici, vous trouverez des offres, des partages d’expérience et des ressources techniques.</p>
-        </section>
-
-        <!-- Section Services -->
-        <section id="services">
-            <h2>Nos Services</h2>
-            <div class="services-container">
-                <div class="service-card">
-                    <h3>🔧 Administration Systèmes</h3>
-                    <p>Installation et gestion de serveurs Linux/Windows.</p>
-                    <p><strong>Prix : à partir de 50€</strong></p>
-                </div>
-                <div class="service-card">
-                    <h3>☁️ Cloud & Virtualisation</h3>
-                    <p>Mise en place d’infrastructures cloud (AWS, Azure, GCP).</p>
-                    <p><strong>Prix : à partir de 80€</strong></p>
-                </div>
-                <div class="service-card">
-                    <h3>🚀 CI/CD & DevOps</h3>
-                    <p>Pipelines CI/CD avec GitHub Actions, GitLab CI, Jenkins.</p>
-                    <p><strong>Prix : à partir de 100€</strong></p>
-                </div>
-                <div class="service-card">
-                    <h3>🔒 Sécurité & Monitoring</h3>
-                    <p>Mise en place de solutions de supervision et sécurisation.</p>
-                    <p><strong>Prix : à partir de 60€</strong></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section Contributions -->
-        <section id="contributions">
-            <h2>Contributions</h2>
-            <p>Le site est communautaire ! Vous pouvez :</p>
-            <ul>
-                <li>Proposer vos services</li>
-                <li>Partager un article technique</li>
-                <li>Contribuer via une Pull Request GitHub</li>
-            </ul>
-            <p>➡️ Les contributions passent par le dépôt GitHub et sont intégrées via CI/CD.</p>
-        </section>
-
-        <!-- Section A propos -->
-        <section id="apropos">
-            <h2>À propos</h2>
-            <p>Ce projet est un prototype réalisé dans le cadre d’un bachelor informatique.  
-            Objectif : simuler une plateforme communautaire statique avec CI/CD.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Infra & DevOps Hub</p>
-        <p><strong>Crédits :</strong> Yoann C., [Nom2 Prénom2], [Nom3 Prénom3]</p>
-    </footer>
-
-</body>
-</html>
+</body></html>
