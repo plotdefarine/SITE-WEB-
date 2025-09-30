@@ -1,6 +1,6 @@
-# VOICI NOTRE SITE INCROYABLE
+# VOICI DevConnect
 
-Bienvenue sur **VOICI NOTRE SITE INCROYABLE**, un projet de maquettage réalisé dans le cadre de notre Bachelor.  
+Bienvenue sur **DevConnect**, un projet de maquettage réalisé dans le cadre de notre Bachelor.  
 L’objectif est de proposer un site communautaire simple, statique et collaboratif, inspiré de plateformes comme Fiverr, mais dédié aux métiers **Infra (SysOps)** et **Dev (DevOps)**.  
 
 Les contributions sont gérées de manière **asynchrone via Git et CI/CD**, afin de simuler une véritable plateforme ouverte où chacun peut proposer des services ou partager des connaissances.
