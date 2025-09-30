@@ -31,9 +31,9 @@ Ce dépôt contient :
 ## Processus de contribution
 
 1. **Fork** du dépôt GitHub.  
-2. **Création d’une branche** dédiée à votre contribution (ex : `feature/ajout-service`).  
+2. **Création d’une branche** dédiée à notre contribution (ex : `feature/ajout-service`).  
 3. **Ajout de contenu** (nouveau service, article, ressource…).  
-4. **Commit & Push** de vos modifications.  
+4. **Commit & Push** de nos modifications.  
 5. **Pull Request** vers la branche `main`.  
 
 Les contributions sont **revues** avant intégration, puis déployées automatiquement grâce au pipeline CI/CD.  
