@@ -1,4 +1,4 @@
-# 🚀 VOICI NOTRE SITE INCROYABLE
+# VOICI NOTRE SITE INCROYABLE
 
 Bienvenue sur **VOICI NOTRE SITE INCROYABLE**, un projet de maquettage réalisé dans le cadre de notre Bachelor.  
 L’objectif est de proposer un site communautaire simple, statique et collaboratif, inspiré de plateformes comme Fiverr, mais dédié aux métiers **Infra (SysOps)** et **Dev (DevOps)**.  
