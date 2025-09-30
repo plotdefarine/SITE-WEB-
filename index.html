@@ -3,35 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titre du site</title>
+    <title>Infra & DevOps Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <!-- En-tête du site (logo, navigation) -->
+        <h1>Infra & DevOps Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#bienvenue">Bienvenue</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contributions">Contributions</a></li>
+                <li><a href="#apropos">À propos</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <!-- Menu de navigation -->
-    </nav>
-
     <main>
-        <!-- Contenu principal -->
-        <section>
-            <!-- Section 1 -->
+        <!-- Section Bienvenue -->
+        <section id="bienvenue">
+            <h2>Bienvenue</h2>
+            <p>Un espace communautaire simple pour les professionnels de l'infrastructure (SysOps) et du développement (DevOps).</p>
+            <p>Ici, vous trouverez des offres, des partages d’expérience et des ressources techniques.</p>
         </section>
-        <section>
-            <!-- Section 2 -->
+
+        <!-- Section Services -->
+        <section id="services">
+            <h2>Nos Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <h3>🔧 Administration Systèmes</h3>
+                    <p>Installation et gestion de serveurs Linux/Windows.</p>
+                    <p><strong>Prix : à partir de 50€</strong></p>
+                </div>
+                <div class="service-card">
+                    <h3>☁️ Cloud & Virtualisation</h3>
+                    <p>Mise en place d’infrastructures cloud (AWS, Azure, GCP).</p>
+                    <p><strong>Prix : à partir de 80€</strong></p>
+                </div>
+                <div class="service-card">
+                    <h3>🚀 CI/CD & DevOps</h3>
+                    <p>Pipelines CI/CD avec GitHub Actions, GitLab CI, Jenkins.</p>
+                    <p><strong>Prix : à partir de 100€</strong></p>
+                </div>
+                <div class="service-card">
+                    <h3>🔒 Sécurité & Monitoring</h3>
+                    <p>Mise en place de solutions de supervision et sécurisation.</p>
+                    <p><strong>Prix : à partir de 60€</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contributions -->
+        <section id="contributions">
+            <h2>Contributions</h2>
+            <p>Le site est communautaire ! Vous pouvez :</p>
+            <ul>
+                <li>Proposer vos services</li>
+                <li>Partager un article technique</li>
+                <li>Contribuer via une Pull Request GitHub</li>
+            </ul>
+            <p>➡️ Les contributions passent par le dépôt GitHub et sont intégrées via CI/CD.</p>
+        </section>
+
+        <!-- Section A propos -->
+        <section id="apropos">
+            <h2>À propos</h2>
+            <p>Ce projet est un prototype réalisé dans le cadre d’un bachelor informatique.  
+            Objectif : simuler une plateforme communautaire statique avec CI/CD.</p>
         </section>
     </main>
 
-    <aside>
-        <!-- Barre latérale (facultatif) -->
-    </aside>
-
     <footer>
-        <!-- Pied de page -->
+        <p>&copy; 2025 Infra & DevOps Hub</p>
+        <p><strong>Crédits :</strong> Yoann C., [Nom2 Prénom2], [Nom3 Prénom3]</p>
     </footer>
 
 </body>
