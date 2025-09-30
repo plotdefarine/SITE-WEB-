@@ -4,7 +4,7 @@
 
 __Intrigue__
 
-1. Équipe
+# Credits
 
       - Nathan B
       - Emma G
