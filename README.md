@@ -7,7 +7,7 @@ Les contributions sont gérées de manière **asynchrone via Git et CI/CD**, afi
 
 ---
 
-## 🎯 Intrigue (Concept)
+## Intrigue (Concept)
 
 Notre site est pensé comme un **hub communautaire technique** où les professionnels de l’informatique peuvent :
 
@@ -19,7 +19,7 @@ Le site est **statique** (HTML/CSS) et fonctionne en **Flat-File CI/CD** : chaqu
 
 ---
 
-## 📂 Dépôt
+## Dépôt
 
 Ce dépôt contient :  
 - Le **code source** du site (HTML/CSS).  
@@ -28,7 +28,7 @@ Ce dépôt contient :
 
 ---
 
-## ⚙️ Processus de contribution
+## Processus de contribution
 
 1. **Fork** du dépôt GitHub.  
 2. **Création d’une branche** dédiée à votre contribution (ex : `feature/ajout-service`).  
@@ -40,7 +40,7 @@ Les contributions sont **revues** avant intégration, puis déployées automatiq
 
 ---
 
-## 👥 Crédits
+## Crédits
 
 - Nathan B  
 - Emma G  
