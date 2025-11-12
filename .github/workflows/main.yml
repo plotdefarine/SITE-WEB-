@@ -15,11 +15,61 @@ jobs:
       - name: Récupération du code source
         uses: actions/checkout@v3
 
+      # ✅ NOUVELLE ÉTAPE : Vérification des fichiers requis
+      - name: Vérifier l'existence des fichiers requis
+        run: |
+          echo "🔍 Vérification des fichiers nécessaires au déploiement..."
+          
+          # Liste des fichiers obligatoires
+          required_files=("index.html" "style.css")
+          
+          # Liste des fichiers optionnels (avertissement seulement)
+          optional_files=("dashboard.html" "submit.html" "maquette_stitch.png" "README.md")
+          
+          # Vérification des fichiers obligatoires
+          for file in "${required_files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "❌ ERREUR: Fichier obligatoire manquant: $file"
+              exit 1
+            else
+              echo "✅ Fichier obligatoire présent: $file"
+            fi
+          done
+          
+          # Vérification des fichiers optionnels
+          for file in "${optional_files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "⚠️  AVERTISSEMENT: Fichier optionnel manquant: $file"
+            else
+              echo "✅ Fichier optionnel présent: $file"
+            fi
+          done
+          
+          # Affichage de la taille des fichiers
+          echo "📊 Taille des fichiers présents:"
+          for file in *; do
+            if [ -f "$file" ]; then
+              size=$(du -h "$file" | cut -f1)
+              echo "   - $file: $size"
+            fi
+          done
+          
+          echo "🎯 Vérification des fichiers terminée avec succès!"
+
       # Préparation du contenu du site
       - name: Préparer le contenu du site
         run: |
           mkdir -p public
           cp -r index.html dashboard.html submit.html style.css maquette_stitch.png README.md public/
+
+      # ✅ ÉTAPE SUPPLÉMENTAIRE : Vérification après copie
+      - name: Vérifier le contenu du dossier public
+        run: |
+          echo "📁 Contenu du dossier public après copie:"
+          ls -la public/
+          echo ""
+          echo "📝 Vérification des types de fichiers:"
+          file public/*
 
       # Déploiement automatique sur GitHub Pages
       - name: Déploiement sur GitHub Pages
