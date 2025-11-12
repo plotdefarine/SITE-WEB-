@@ -1,0 +1,22 @@
+name: Build and Deploy
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v3
+
+      - name: Installation de l’environnement
+        run: sudo apt-get install -y hugo  # ou jekyll, selon ton site
+
+      - name: Génération du site
+        run: hugo  # ou jekyll build, npm run build, etc.
+
+      - name: Déploiement
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public  # dossier où ton site est généré
