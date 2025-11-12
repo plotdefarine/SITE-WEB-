@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DevConnect</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1193d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200">
+<div class="flex flex-col min-h-screen">
+<header class="bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-20">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between h-16 border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-2" href="#">
+<svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-xl font-bold text-slate-900 dark:text-white">DevConnect</h2>
+</a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Accueil</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="dashboard.html">Tableau de bord</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="notifications.html">Ajouter un article</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500">search</span>
+<input class="form-input w-full min-w-0 flex-1 rounded-lg text-sm text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-800/50 border-transparent focus:border-primary focus:ring-0 pl-10 h-10" placeholder="Search" type="search"/>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjP5OyAdcC-lzXV0e8OhAVFegmUe9RXMGoyEiGJo1n9OS10L_rw7fD8gsWqw7_7OC0IZn5fcn3ASrfYPxELEtbyHhnSUhRBNGRbwDOpVebL4uIUe0ZO_OPsIX9zeL28l-L2pA5uWaQaLm6jjpu2LcMcoUNRwdq5866iK1sw53FAFPnVHqXkizSqFUTvMfQ6It53Oaqm6Az4BPa3zE0cZRB_po4Vt8Jt0bWdZjk44-K0KXATIzuz5LRT4MjYUIuBN49s1sQ5A5ZEjI");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="container mx-auto px-4 py-8 md:py-16">
+<div class="max-w-2xl mx-auto">
+<div class="mb-8">
+<h1 class="text-4xl font-bold text-slate-900 dark:text-white mb-2">Submit an Article</h1>
+<p class="text-slate-500 dark:text-slate-400">Share your knowledge with the community.</p>
+</div>
+<div class="bg-background-light dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-800">
+<form class="space-y-6 p-6 md:p-8">
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2" for="title">Title</label>
+<input class="form-input w-full rounded-lg text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 focus:border-primary focus:ring-primary/50 transition" id="title" placeholder="Enter the title of your article" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2" for="category">Category</label>
+<select class="form-select w-full rounded-lg text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 focus:border-primary focus:ring-primary/50 transition" id="category">
+<option selected="">Select a category</option>
+<option value="development">Development</option>
+<option value="infrastructure">Infrastructure</option>
+<option value="design">Design</option>
+<option value="career">Career</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2" for="tags">Tags</label>
+<input class="form-input w-full rounded-lg text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 focus:border-primary focus:ring-primary/50 transition" id="tags" placeholder="Enter tags separated by commas" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2" for="content">Content</label>
+<textarea class="form-textarea w-full rounded-lg text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 focus:border-primary focus:ring-primary/50 transition" id="content" placeholder="Write your article here (supports Markdown)" rows="10"></textarea>
+</div>
+<div class="pt-4 border-t border-slate-200 dark:border-slate-800">
+<p class="text-xs text-slate-500 dark:text-slate-400">
+<strong>Submission Guidelines:</strong> Articles should be original, informative, and relevant to the development community. Please ensure your content is free of plagiarism and adheres to our community standards. We reserve the right to edit or reject submissions that do not meet our guidelines.
+                  </p>
+</div>
+<div class="flex justify-end">
+<button class="flex items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-slate-900/50 transition-all" type="submit">
+                    Submit Article
+                  </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
