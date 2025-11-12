@@ -1,22 +1,28 @@
-name: Build and Deploy
+name: Déploiement du site sur GitHub Pages
+
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main  # ou 'master' selon ta branche principale
+
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Récupération du code
+      # 1️⃣ Récupération du code
+      - name: Récupération du code source
         uses: actions/checkout@v3
 
-      - name: Installation de l’environnement
-        run: sudo apt-get install -y hugo  # ou jekyll, selon ton site
+      # 2️⃣ Génération du site (ici, rien à construire, donc juste garder les fichiers)
+      - name: Préparer le contenu du site
+        run: |
+          mkdir public
+          cp -r index.html dashboard.html submit.html style.css maquette_stitch.png README.md public/
 
-      - name: Génération du site
-        run: hugo  # ou jekyll build, npm run build, etc.
-
-      - name: Déploiement
+      # 3️⃣ Déploiement automatique sur GitHub Pages
+      - name: Déploiement sur GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # dossier où ton site est généré
+          publish_dir: ./public
